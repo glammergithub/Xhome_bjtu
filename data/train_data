@@ -1,0 +1,726 @@
+text,intent,singer
+我想听周杰伦的|request_search|周杰伦
+给我放一首李健的歌|request_search|李健
+我想听李健的歌|request_search|李健
+我想听梁静茹的歌|request_search|梁静茹
+给我来首薛之谦的歌|request_search|薛之谦
+我想听个许嵩的歌|request_search|许嵩
+我想听林俊杰的歌|request_search|林俊杰
+听听周杰伦的歌吧|request_search|周杰伦
+听一首王菲的歌吧|request_search|王菲
+我想听花粥姐姐的|request_search|花粥
+我想听李荣浩的|request_search|李荣浩
+放一首林宥嘉的歌|request_search|林宥佳
+放一首华晨宇的歌|request_search|华晨宇
+放一首周笔畅的歌吧|request_search|周笔畅
+
+text,intent,name
+我想听告白气球|request_search|告白气球
+给我来一首情非得已|request_search|情非得已
+我想听演员|request_search|演员
+我想听夜空中最亮的星|request_search|夜空中最亮的星
+来首夜空中最亮的星|request_search|夜空中最亮的星
+来首李白|request_search|李白
+一首纸短情长|request_search|纸短情长
+来一首平凡的路|request_search|平凡的路
+来首追梦赤子心|request_search|追梦赤子心
+来首空空如也|request_search|空空如也
+
+
+
+text,intent,singer,name
+我想听周杰伦的告白气球|request_search|周杰伦,告白气球
+给我放一首汪峰的像梦一样自由|request_search|汪峰,像梦一样自由
+给我放一首五月天的拥抱|request_search|五月天,拥抱
+来一首周杰伦的鞋子特大号|request_search|周杰伦,鞋子特大号
+来一首邓紫棋的夜空中最亮的星|request_search|邓紫棋,夜空中最亮的星
+我想听许嵩的山水之间|request_search|许嵩,山水之间
+我想听周杰伦的双截棍|request_search|周杰伦,双截棍
+来个李荣浩的李白|request_search|李荣浩,李白
+我想听华晨宇的烟火里的尘埃|request_search|华晨宇,烟火里的尘埃
+我想听许嵩的惊鸿一面|request_search|许嵩,惊鸿一面
+给我来一首汪峰的怒放的生命|request_search|汪峰,怒放的生命
+我想听花粥的纸短情长|request_search|花粥,纸短情长
+
+text,intent,style
+我想听情歌|request_search|情歌
+我想听摇滚|request_search|摇滚
+我想听英文歌|request_search|英文
+我想听首吉他曲|request_search|吉他
+我想听首钢琴|request_search|钢琴曲
+来首粤语歌|request_search|粤语
+我想听粤语歌|request_search|粤语
+我想听首欢快的歌|request_search|欢快
+我想听首悲伤的歌|request_search|悲伤
+来首韩文歌吧|request_search|韩文
+我想听适合跑步听的音乐|request_search|跑步
+我想听适合工作听的音乐|request_search|工作
+来首中文歌|request_search|中文
+我想听令人兴奋的歌|request_search|欢快
+我想听刺激的歌|request_search|欢快
+我想听安静的歌|request_search|安静
+我想听郁闷的歌|request_search|悲伤
+
+text,intent,singer,style
+我想听周杰伦的情歌|request_management|周杰伦,情歌
+来首薛之谦的情歌|request_management|薛之谦,情歌
+来首方大同的英文歌|request_management|方大同,英文
+来首方大同的中文歌|request_management|方大同,中文
+我想听汪峰的民谣|request_management|汪峰,民谣
+我想听五月天的情歌|request_management|五月天,情歌
+我想听五月天的摇滚|request_management|五月天,摇滚
+我想听邓紫棋的英文歌|request_management|邓紫棋,英文
+我想听邓紫棋的粤语歌|request_management|邓紫棋,粤语
+来首邓紫棋的英文歌|request_management|邓紫棋,英文
+来首邓紫棋的粤语歌|request_management|邓紫棋,粤语
+我想听汪峰的励志歌|request_management|汪峰,欢快
+
+
+text,intent,item
+周杰伦的|inform_singer
+花粥的|inform_singer
+李健的|inform_singer
+汪峰的|inform_singer
+告白气球吧|inform_name
+像梦一样自由吧|inform_name
+纸短情长吧|inform_name
+欢快一点的|inform_style
+悲伤一点的|inform_style
+情歌吧|inform_style
+
+
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "我想听周杰伦的",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "周杰伦",
+            "entity": "singer"
+          }
+        ]
+      },
+      {
+        "text": "给我放一首李健的歌",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 7,
+            "value": "李健",
+            "entity": "singer"
+          }
+        ]
+      },
+      {
+        "text": "我想听李健的歌",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "李健",
+            "entity": "singer"
+          }
+        ]
+      },
+      {
+        "text": "我想听梁静茹的歌",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "梁静茹",
+            "entity": "singer"
+          }
+        ]
+      },
+      {
+        "text": "给我来首薛之谦的歌",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "薛之谦",
+            "entity": "singer"
+          }
+        ]
+      },
+      {
+        "text": "我想听个许嵩的歌",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "许嵩",
+            "entity": "singer"
+          }
+        ]
+      },
+      {
+        "text": "我想听林俊杰的歌",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "林俊杰",
+            "entity": "singer"
+          }
+        ]
+      },
+      {
+        "text": "听听周杰伦的歌吧",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 5,
+            "value": "周杰伦",
+            "entity": "singer"
+          }
+        ]
+      },
+      {
+        "text": "听一首王菲的歌吧",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "王菲",
+            "entity": "singer"
+          }
+        ]
+      },
+      {
+        "text": "我想听花粥姐姐的",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "花粥",
+            "entity": "singer"
+          }
+        ]
+      },
+      {
+        "text": "我想听李荣浩的",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "李荣浩",
+            "entity": "singer"
+          }
+        ]
+      },
+      {
+        "text": "放一首林宥嘉的歌",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "放一首华晨宇的歌",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "华晨宇",
+            "entity": "singer"
+          }
+        ]
+      },
+      {
+        "text": "放一首周笔畅的歌吧",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "周笔畅",
+            "entity": "singer"
+          }
+        ]
+      },
+      {
+        "text": "我想听告白气球",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 7,
+            "value": "告白气球",
+            "entity": "name"
+          }
+        ]
+      },
+      {
+        "text": "给我来一首情非得已",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "情非得已",
+            "entity": "name"
+          }
+        ]
+      },
+      {
+        "text": "我想听演员",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "演员",
+            "entity": "name"
+          }
+        ]
+      },
+      {
+        "text": "我想听夜空中最亮的星",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 10,
+            "value": "夜空中最亮的星",
+            "entity": "name"
+          }
+        ]
+      },
+      {
+        "text": "来首夜空中最亮的星",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 9,
+            "value": "夜空中最亮的星",
+            "entity": "name"
+          }
+        ]
+      },
+      {
+        "text": "来首李白",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "李白",
+            "entity": "name"
+          }
+        ]
+      },
+      {
+        "text": "一首纸短情长",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 6,
+            "value": "纸短情长",
+            "entity": "name"
+          }
+        ]
+      },
+      {
+        "text": "来一首平凡的路",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 7,
+            "value": "平凡的路",
+            "entity": "name"
+          }
+        ]
+      },
+      {
+        "text": "来首追梦赤子心",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 7,
+            "value": "追梦赤子心",
+            "entity": "name"
+          }
+        ]
+      },
+      {
+        "text": "来首空空如也",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 6,
+            "value": "空空如也",
+            "entity": "name"
+          }
+        ]
+      },
+      {
+        "text": "我想听周杰伦的告白气球",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "给我放一首汪峰的像梦一样自由",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "给我放一首五月天的拥抱",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "来一首周杰伦的鞋子特大号",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "来一首邓紫棋的夜空中最亮的星",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "我想听许嵩的山水之间",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "我想听周杰伦的双截棍",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "来个李荣浩的李白",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "我想听华晨宇的烟火里的尘埃",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "我想听许嵩的惊鸿一面",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "给我来一首汪峰的怒放的生命",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "我想听花粥的纸短情长",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "我想听情歌",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "情歌",
+            "entity": "style"
+          }
+        ]
+      },
+      {
+        "text": "我想听摇滚",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "摇滚",
+            "entity": "style"
+          }
+        ]
+      },
+      {
+        "text": "我想听英文歌",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "英文",
+            "entity": "style"
+          }
+        ]
+      },
+      {
+        "text": "我想听首吉他曲",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "吉他",
+            "entity": "style"
+          }
+        ]
+      },
+      {
+        "text": "我想听首钢琴",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "来首粤语歌",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "粤语",
+            "entity": "style"
+          }
+        ]
+      },
+      {
+        "text": "我想听粤语歌",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "粤语",
+            "entity": "style"
+          }
+        ]
+      },
+      {
+        "text": "我想听首欢快的歌",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "欢快",
+            "entity": "style"
+          }
+        ]
+      },
+      {
+        "text": "我想听首悲伤的歌",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "悲伤",
+            "entity": "style"
+          }
+        ]
+      },
+      {
+        "text": "来首韩文歌吧",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "韩文",
+            "entity": "style"
+          }
+        ]
+      },
+      {
+        "text": "我想听适合跑步听的音乐",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 7,
+            "value": "跑步",
+            "entity": "style"
+          }
+        ]
+      },
+      {
+        "text": "我想听适合工作听的音乐",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 7,
+            "value": "工作",
+            "entity": "style"
+          }
+        ]
+      },
+      {
+        "text": "来首中文歌",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "中文",
+            "entity": "style"
+          }
+        ]
+      },
+      {
+        "text": "我想听令人兴奋的歌",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "我想听刺激的歌",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "我想听安静的歌",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "安静",
+            "entity": "style"
+          }
+        ]
+      },
+      {
+        "text": "我想听郁闷的歌",
+        "intent": "request_search",
+        "entities": []
+      },
+      {
+        "text": "我想听周杰伦的情歌",
+        "intent": "request_management",
+        "entities": []
+      },
+      {
+        "text": "来首薛之谦的情歌",
+        "intent": "request_management",
+        "entities": []
+      },
+      {
+        "text": "来首方大同的英文歌",
+        "intent": "request_management",
+        "entities": []
+      },
+      {
+        "text": "来首方大同的中文歌",
+        "intent": "request_management",
+        "entities": []
+      },
+      {
+        "text": "我想听汪峰的民谣",
+        "intent": "request_management",
+        "entities": []
+      },
+      {
+        "text": "我想听五月天的情歌",
+        "intent": "request_management",
+        "entities": []
+      },
+      {
+        "text": "我想听五月天的摇滚",
+        "intent": "request_management",
+        "entities": []
+      },
+      {
+        "text": "我想听邓紫棋的英文歌",
+        "intent": "request_management",
+        "entities": []
+      },
+      {
+        "text": "我想听邓紫棋的粤语歌",
+        "intent": "request_management",
+        "entities": []
+      },
+      {
+        "text": "来首邓紫棋的英文歌",
+        "intent": "request_management",
+        "entities": []
+      },
+      {
+        "text": "来首邓紫棋的粤语歌",
+        "intent": "request_management",
+        "entities": []
+      },
+      {
+        "text": "我想听汪峰的励志歌",
+        "intent": "request_management",
+        "entities": []
+      },
+      {
+        "text": "周杰伦的",
+        "intent": "inform_singer",
+        "entities": []
+      },
+      {
+        "text": "花粥的",
+        "intent": "inform_singer",
+        "entities": []
+      },
+      {
+        "text": "李健的",
+        "intent": "inform_singer",
+        "entities": []
+      },
+      {
+        "text": "汪峰的",
+        "intent": "inform_singer",
+        "entities": []
+      },
+      {
+        "text": "告白气球吧",
+        "intent": "inform_name",
+        "entities": []
+      },
+      {
+        "text": "像梦一样自由吧",
+        "intent": "inform_name",
+        "entities": []
+      },
+      {
+        "text": "纸短情长吧",
+        "intent": "inform_name",
+        "entities": []
+      },
+      {
+        "text": "欢快一点的",
+        "intent": "inform_style",
+        "entities": []
+      },
+      {
+        "text": "悲伤一点的",
+        "intent": "inform_style",
+        "entities": []
+      },
+      {
+        "text": "情歌吧",
+        "intent": "inform_style",
+        "entities": []
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}
